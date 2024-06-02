@@ -32,7 +32,7 @@
 # <div id='installation-guide'>Installation Guide</div>
 
     1. Clone the repository:
-        - git clone https://gitlab.rinznetwork.com/frontend/artify.git
+        - git clone https://github.com/Artify-Platform/dapp-artify.git
         - cd artify
     2. Install dependencies:
         - yarn
