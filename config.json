@@ -1,0 +1,8 @@
+{
+  "URL_ZK_PROVER": "https://prover-dev.mystenlabs.com/v1",
+  "URL_SALT_SERVICE": "/dummy-salt-service.json",
+  "SETUP_DATA_KEY": "zklogin-demo.artify.setup",
+  "ACCOUNT_DATA_KEY": "zklogin-demo.artify.account",
+  "ACCOUNT_WALLET_KEY": "wallet-demo.artify.account",
+  "FULLNODE_URL": "https://fullnode.devnet.sui.io"
+}

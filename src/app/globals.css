@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 100;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Thin.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 200;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Ultralight.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 300;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 400;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 500;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Medium.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 600;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 700;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 800;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Heavy.otf');
+}
+
+@font-face {
+  font-family: 'SF PRO DISPLAY';
+  font-weight: 900;
+  src: url('/fonts/sf-pro-display/SF-Pro-Display-Black.otf');
+}
+
+@font-face {
+  font-family: 'Druk Text Wide Trial';
+  font-weight: 500;
+  src: url('/fonts/druk-text-wide-trial/DrukTextWide-Medium-Trial.otf');
+}
+
+@font-face {
+  font-family: 'Druk Text Wide Trial';
+  font-weight: 700;
+  src: url('/fonts/druk-text-wide-trial/DrukTextWide-Bold-Trial.otf');
+}
+
+@font-face {
+  font-family: 'Druk Text Wide Trial';
+  font-weight: 800;
+  src: url('/fonts/druk-text-wide-trial/DrukTextWide-Heavy-Trial.otf');
+}
+
+@font-face {
+  font-family: 'Druk Text Wide Trial';
+  font-weight: 900;
+  src: url('/fonts/druk-text-wide-trial/DrukTextWide-Super-Trial.otf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('/fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow: hidden;
+}
+/* .wkit-dialog__overlay {
+  background-color: transparent !important;
+} */
+
+.infinite-scroll-component__outerdiv {
+  width: 100%;
+  max-width: 800px;
+  /* padding: 0 16px; */
+}
+
+.wavy {
+  position: relative;
+  height: 30px;
+  transform: translateY(10px);
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  /* font-size: 60px; */
+  width: 10px;
+  height: 10px;
+  background-color: #3b3b3b;
+  margin-right: 4px;
+  border-radius: 100%;
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.backdrop-blur-custom {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.backdrop {
+  position: relative;
+}
+
+.backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  /* #scrollableDiv {
+    height: calc(100vh - 170px) !important;
+  } */
+}
+
+@media (max-width: 768px) {
+  .wavy span {
+    width: 7px;
+    height: 7px;
+  }
+}
