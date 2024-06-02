@@ -1,7 +1,7 @@
 'use client'
 import 'regenerator-runtime'
 
-import useVoiceChat from '@/hooks/useVoicechat'
+import useVoiceChat from '@/hooks/use-voicechat'
 import { useChat } from '@/provider/chat-provider'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
